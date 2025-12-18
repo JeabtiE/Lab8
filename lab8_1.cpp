@@ -7,25 +7,23 @@ int main()
     cout << "Input your rank: ";
     cin >> rank;
     
-    switch(rank) {
-        case 'S': 
-            cout << "You have received Super Ultra Rare Unit!!!\n";
-            break;
-        case 'A': 
-            cout << "You have received 5 gems.\n";
-            break;
-        case 'B': 
-            cout << "You have received 1 gems.\n";
-            break;
-        case 'C': 
-            cout << "You have received 2000 coins.\n";
-            break;
-        case 'D': 
-            cout << "You have received very KAK items.\n";
-            break;
-        default:
-            cout << "Invalid rank!\n";
-            break;
+    if (rank == 'S') {
+        cout << "You have received Super Ultra Rare Unit!!!\n";
+    }
+    else if (rank == 'A') {
+        cout << "You have received 5 gems.\n";
+    }
+    else if (rank == 'B') {
+        cout << "You have received 1 gems.\n";
+    }
+    else if (rank == 'C') {
+        cout << "You have received 2000 coins.\n";
+    }
+    else if (rank == 'D') {
+        cout << "You have received very KAK items.\n";
+    }
+    else {
+        cout << "Invalid rank!\n";
     }
     
     return 0;
